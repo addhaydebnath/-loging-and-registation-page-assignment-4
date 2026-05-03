@@ -52,7 +52,7 @@ class LoginPage extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: TextButton(
                 onPressed: () {
-                  // Add forgot password logic here
+                  
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text("Password reset link sent!")),
                   );
@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
               height: 50,
               child: ElevatedButton(
                 onPressed: () {
-                  // Add login logic here
+                
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text("Login successful!")),
                   );
@@ -158,3 +158,4 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
