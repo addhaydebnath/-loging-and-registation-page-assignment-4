@@ -1,6 +1,4 @@
 
-
-Widget buildButton(String text, BuildContext context) {
 import 'package:flutter/material.dart';
 import 'signup_page.dart';
 import 'login_page.dart';
@@ -12,13 +10,13 @@ class FoodLandingPage extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {
         if (text == "Sign Up") {
-       
+        
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const SignupPage()),
           );
         } else if (text == "Login") {
-          
+      
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const LoginPage()),
