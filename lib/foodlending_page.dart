@@ -1,83 +1,6 @@
-/*import 'package:flutter/material.dart';
 
-class FoodLandingPage extends StatelessWidget {
-  const FoodLandingPage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text(
-          "Foodie Delight",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-        backgroundColor: Colors.orange,
-        elevation: 0,
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search, color: Colors.white),
-            onPressed: () {
-              // Search functionality
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.shopping_cart, color: Colors.white),
-            onPressed: () {
-              // Cart functionality
-            },
-          ),
-        ],
-      ),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  buildButton("Sign Up", context), // Changed to Sign Up
-                  const SizedBox(width: 10),
-                  buildButton("Login", context),
-                ],
-              ),
-              const Spacer(),
-              CircleAvatar(
-                radius: 90,
-                backgroundColor: const Color.fromRGBO(255, 165, 0, 0.1),
-                child: const CircleAvatar(
-                  radius: 75,
-                  backgroundImage: NetworkImage(
-                    "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
-                  ),
-                ),
-              ),
-              const SizedBox(height: 25),
-              const Text(
-                "Enjoy your food",
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              const SizedBox(height: 8),
-              const Text(
-                "Delicious food, delivered fast to your door",
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14, color: Colors.grey),
-              ),
-              const Spacer(),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget buildButton(String text, BuildContext context) {*/
+Widget buildButton(String text, BuildContext context) {
 import 'package:flutter/material.dart';
 import 'signup_page.dart';
 import 'login_page.dart';
@@ -89,13 +12,13 @@ class FoodLandingPage extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {
         if (text == "Sign Up") {
-          // Navigate to Sign Up page
+       
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const SignupPage()),
           );
         } else if (text == "Login") {
-          // Navigate to Login page
+          
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const LoginPage()),
